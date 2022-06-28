@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+    <script>
+function FizzBuzzz(){
+ for (let i=0;i<101;i++){ 
+  if(i%3==0 && i%5==0) document.write( i + "\nFizzBuzz\n");
+  else if (i%3==0) document.write(i + "\nFizz\n");
+  else if (i%5==0) document.write(i + "\nBuzz\n");
+  else document.write(i,"\n")
+  }
+  } FizzBuzzz()
+
+function sum_btwn_1000(){ 
+  let sum =0
+  for (let j=0;j<=1000;j++){
+   if (j%3==0 && j%5==0)
+   {sum+=j}
+  } document.write(sum +" " + "is the sum of all numbers between 0 and 1000","\n");
+}sum_btwn_1000()
+
+function even_odd(){  
+for (let k=0;k<=20;k++){
+    if(k%2==0) document.write(k +" " + "is even" ,"\n")
+    else document.write( k +" "+ "is odd","\n")
+}
+} even_odd()
+
+function find_largest(){ 
+var a=10,b=40
+var largest=(10<40)?"40 is the greatest":"10 is the greatest"
+document.write(largest,"\n")
+}find_largest()
+
+function largest_object(){ 
+let numbers=[-2, 4, -5, 6 , 0]
+let greatest=numbers[0]
+for (let z=0;z<numbers.length;z++){
+    if(numbers[z]>greatest)
+    {
+     greatest=numbers[z]
+    }
+}document.write(greatest + " " + "is the largest number in the array","\n") 
+} largest_object()
+
+function leap_years(){
+for( var n=2000;n<=2022;n++){
+    if(n%4==0 ) document.write(n + "was a leap years between 2000 and 2022","\n");
+}
+} leap_years()
+    </script>
+    
+</body>
+</html>
